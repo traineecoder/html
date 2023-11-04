@@ -24,8 +24,8 @@ The list tags are used to display data with bullet points, numbers etc., Example
 ### Best practices using links
 <ul>
 <li> don't put click here things. minimize them if you can.</li>
-<li> don't put phrases like "links to" because it is highlighted.</li>
-<li> Avoid put full webaddress as a link.</li>
+<li> don't put phrases like "links to" because links are highlighted and users are aware of it.</li>
+<li> Avoid put full web address as a link.</li>
 <li> Keep link text short and exact topic not sentences.</li>
 </ul>
 
