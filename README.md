@@ -18,3 +18,14 @@ These are the character that cannot be typed and managed like want to have more 
 # Lists
 The list tags are used to display data with bullet points, numbers etc., Examples for list tags are &lt;ol&gt;,&lt;ul&gt;,&lt;dl&gt; etc., 
 
+# Links
+'link' tag is used to access the resources wheather they are local or some other resources from the internet.<br>
+'anchor' tags is used to move between different pages. <br>
+### Best practices using links
+<ul>
+<li> don't put click here things. minimize them if you can.</li>
+<li> don't put phrases like "links to" because it is highlighted.</li>
+<li> Avoid put full webaddress as a link.</li>
+<li> Keep link text short and exact topic not sentences.</li>
+</ul>
+
