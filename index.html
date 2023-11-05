@@ -17,56 +17,222 @@
     <!-- body tag is the visual part of the page where everything is seen to us. -->
     <body>
         <!-- h1 tag is biggest heading -->
-        <h1>Hello World!</h1>
+        <header>
+            <h1>Hello World!</h1>
+            <nav aria-label="primary-navigator">
+                <ul>
+                    <li>
+                        <a href="#web">Learn Web Development</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <hr>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#web">Learn Web Development</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-        <section id="web">
-            <h2> Web Development</h2>
-            <h3>HTML</h3>
-            <p><abbr title="hypertext markup language">HTML</abbr> is hypertext markup language managed by WHATWG. Current version is <strong>HTML Living Standard</strong>. It is skeleton of web pages.</p>
-        </section>
-        <hr>
-        <p> World is a big &nbsp; place. </p>
-        <ol>
-            <li>India</li>
-            <li>America</li>
-            <li>Australia</li>
-            <li>Singapore</li>
-            <li>Japan</li>
-        </ol>
-        <ul>
-            <li>Hyderabad</li>
-            <li>Banglore</li>
-            <li>Mumbai</li>
-            <li>Delhi</li>
-            <li>Chennai</li>
-        </ul>
-        <dl>
-            <dt>How many states in india?</dt>
-            <dd>28 states</dd>
+        <main>
+            <article id="web">
+                <h2> Web Development</h2>
+                <h3>HTML</h3>
+                <p><abbr title="hypertext markup language">HTML</abbr> is hypertext markup language managed by WHATWG. Current version is <strong>HTML Living Standard</strong>. It is skeleton of web pages.</p>
+            </article>
+            <hr>
+            <article>
+                <h2>World is a big &nbsp; place. </h2>
+                <figure>
+                    <img src="images/earth-11595_1920.jpg" alt="Photo of world" title="View of earth from space" width="800" height="400">
+                    <figcaption>The World</figcaption>
+                </figure>
+                <ol>
+                    <li>India</li>
+                    <li>America</li>
+                    <li>Australia</li>
+                    <li>Singapore</li>
+                    <li>Japan</li>
+                </ol>
+                <ul>
+                    <li>Hyderabad</li>
+                    <li>Banglore</li>
+                    <li>Mumbai</li>
+                    <li>Delhi</li>
+                    <li>Chennai</li>
+                </ul>
+                <dl>
+                    <dt>How many states in india?</dt>
+                    <dd>28 states</dd>
 
-            <dt>How many union territories in india?</dt>
-            <dd>8 union territories.</dd>
-        </dl>
-        <address>
-            India, Earth<br>
-            Milkyway galaxy<br>
-            Universe.
-        </address>
-        <ul>
-            <li>Download X <a href="twitter.png" download> logo</a>.</li>
-            <li>Open a <a href="https://www.google.com" target="_blank"></a>tab.</li>
-            <li>Contact me through <a href="mailto:invoker@gmail.com">email</a>.</li>
-            <li>Contact me through <a href="tel:+911234567890">mobile</a>.</li>
-        </ul>
-        &copy; <a href="about.html">Chapathi</a> &lt; &gt;<br>
-        <a href="#">Back to Top</a>
+                    <dt>How many union territories in india?</dt>
+                    <dd>8 union territories.</dd>
+                </dl>
+            </article>
+            <aside>
+                <details>
+                    <summary>How many continents are in the world?</summary>
+                    <p>There are 7 continents.</p>
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>Mark Sheet</caption>
+                <thead>
+                    <tr>
+                        <!-- we can use either scope or id's for better semantics -->
+                        <th scope="col">Subject</th>
+                        <th scope="col">Grade</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First Language</td>
+                        <td>8</td>
+                        <td>76</td>
+                    </tr>
+                    <tr>
+                        <td>Second Language</td>
+                        <td>7</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>8</td>
+                        <td>71</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>9</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>6</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>Social</td>
+                        <td>7</td>
+                        <td>67</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Remarks: "Need improvement in Science.</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <address>
+                India, Earth<br>
+                Milkyway galaxy<br>
+                Universe.
+            </address>
+            <figure>
+                <img src="images/milky-way-2695569_1920.jpg" alt="Milkyway.jpg" title="Milkyway galaxy" width="800" height="450" loading="lazy">
+                <figcaption>Milkyway galaxy</figcaption>
+            </figure>
+            <ul>
+                <li>Download X <a href="twitter.png" download> logo</a>.</li>
+                <li>Open a <a href="https://www.google.com" target="_blank"></a>tab.</li>
+                <li>Contact me through <a href="mailto:invoker@gmail.com">email</a>.</li>
+                <li>Contact me through <a href="tel:+911234567890">mobile</a>.</li>
+            </ul>
+            <hr>
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" autocomplete="on" placeholder="John" autofocus required>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" autocomplete="on" placeholder="Doe">
+                        </p>
+                        <p>
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" autocomplete="on" pattern="[0-9]{10}">
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="*****" required>
+                        </p>
+                        <p>
+                            <label for="year">Year: </label>
+                            <input type="number" name="year" id="year" min="1920" max="2070" step="5" value="2025">
+                        </p>
+                        <p>
+                            <label for="coffee">Coffee List: </label>
+                            <select name="coffee" id="coffee">
+                                <optgroup label="Coffees">
+                                    <option value="Black Coffee" selected>Black Coffee</option>
+                                    <option value="Iced Coffe">Iced Coffee</option>
+                                </optgroup>
+                                <optgroup label="Juices">
+                                    <option value="Lemon Juice">Lemon Juice</option>
+                                    <option value="Orange Juice">Orange Juice</option>
+                                    <option value="Apple Juice">Apple Juice</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <!-- <p>
+                            <label for="coffee">Coffe List: </label>
+                            <input type="text" name="coffee" id="coffee" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="Black Coffe"></option>
+                                <option value="Iced Coffe"></option>
+                                <option value="Regular Coffe"></option>
+                            </datalist>
+                        </p> -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favorite Food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="chapathi" value="chapathi">
+                            <label for="chapathi">Chapathi</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="idly" value="idly">
+                            <label for="idly">Idly</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="friedRice" value="Fried Rice">
+                            <label for="friedRice">Fried Rice</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favorite pets?</legend>
+                        <p>
+                            <input type="checkbox" name="animals" id="dog" value="dog">
+                            <label for="dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="animals" id="cat" value="cat">
+                            <label for="cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="animals" id="hen" value="hen">
+                            <label for="hen">hen</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send Message</legend>
+                        <p>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here ..."></textarea>
+                        </p>
+                        <br>
+                        <button type="submit">submit</button>
+                        <button type="reset">reset</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; <a href="about.html">Chapathi</a> &lt; &gt;</p><br>
+            <p><a href="#">Back to Top</a></p>
+        </footer>
     </body>
 </html>

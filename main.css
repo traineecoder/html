@@ -1,6 +1,14 @@
 html {
     font-family: 'Courier New', Courier, monospace;
 }
+/* body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+} */
 a {
     color:cadetblue;
 }
@@ -14,4 +22,10 @@ a:hover{
 
 a:active{
     color:yellow;
+}
+table,tr,th, td, caption {
+    border: 1px solid #000;
+    font-family: cursive;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }
